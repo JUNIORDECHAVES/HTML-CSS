@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo de caixas</title>
+    <style>
+        /* 
+        border = borda
+        padding = preenchimento, serve para deixar um espaço entre o conteúdo e a borda (espaço interno)
+        margin = preenchimento, ele cria um espaço fora da borda (espaço externo)
+        outline = ele pode ser chamado de contorno ou traçado
+
+        traduçao de algumas palavras 
+        weight = peso 
+        height = altura
+        width = largura
+
+        top = cima
+        right = direita
+        left = esquerda
+        bottom = baixo
+        
+        */
+        h1 {
+            background-color: aquamarine;
+            height: 300px;
+            width: 300px;
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: darkslategrey; */
+        
+            /* 
+            shorthand ou
+            simplificando border 
+            border-width => 
+            border-style =>
+            border-color .
+            */
+            border: 10px solid darkslategrey;
+
+
+            /* 
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; 
+
+            shorthand ou  simplificador padding
+
+            padding-top => padding-right => padding-bottom => padding-left.
+            ou padding-height e width
+            ou uma vez para todos os lados
+            */
+            padding: 10px;
+
+            /* margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;  
+            
+            shorthand ou simplificador margin
+            margin-top => margin-right => margin-bottom => margin-left.
+            
+            se colocarmos 'auto' em right e em left eles centralizaram a caixa
+            */
+            /* margin: auto; para centralizar caixas (somente caixas) */
+
+            margin: 20px 20px 40px 20px;
+
+            /* outline-width: 5px; outline-style: dashed;
+            outline-color: salmon; 
+            
+            shorthand ou simplificador outline
+            outline-width => outline-style => outline-color.
+            */
+           
+            outline: 5px dashed salmon;
+
+           
+        
+        }
+        a {
+            text-decoration: none;
+            border: 5px solid red;
+
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de box-level</h1>
+    <p>parágrafos também são exemplos de box-leve, mas os <a href="#">são exemplos de caixas inline-level</a>. vamos ver como tudo isso funciona.</p>
+</body>
+</html>

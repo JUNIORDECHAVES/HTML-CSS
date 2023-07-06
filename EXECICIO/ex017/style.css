@@ -1,0 +1,39 @@
+@charset "UTF-8" ;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* mediads absolutas:
+    cm(centimentro ), mm(melimetro), in(polegada), px(pixel), pt(ponto), pc(paica) .
+    
+    medidas relativas:
+    em(medida relativa ao tamanho atual da fonte), ex(relativa ao tamonho X de uma fonte(não lembra veja o capitulo 14 aula 02)), rem(e tipo o em só que ralativo ao root a fonte que tá configurado no body), vw, vh, %
+
+    obs: 16 px geralmente e igual a "1em" */
+
+     font-size: 1em; 
+    /*font-weight: lighter;*/
+    /* lighter, normal, bold bolder */
+    /* font-style: italic;
+    text-decoration: underline; */
+
+    /*recomendação oficial usar ou "px" ou "em". ou você vai dar trabalhos de tamanho para alguns aparelhos  
+    */
+}
+h1{
+    /* font-family: 'work sans', 'sans-serif';
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+    
+    use a segunda opção é menos tempó
+     e se chama!!!  */
+
+   /* shorthand font */
+
+     
+    font: italic bolder 3em 'work sans', 'sans-serif';
+    /* font-style -> font-weight -> font-size -> font-family */
+}
+h2{
+    font: bold 2em 'work sans', 'sans-serif';
+}
