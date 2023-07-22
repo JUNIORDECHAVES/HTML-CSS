@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adicionando conteúdo</title>
+    <style>
+       div.video{
+        background-color: lightgrey;
+        padding-bottom: 50%;
+        margin: 0px 0px 30px 0px;
+        position: relative;
+        max-width: 1200px;
+        margin: auto;
+       }
+       div.video iframe#n1{
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       }
+    </style>
+</head>
+<body>
+    <h1>conteúdos dentro do iframe</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum velit quam cumque, animi quod rerum illo repellat maiores officiis veritatis eveniet temporibus aliquam tempore? Nesciunt accusamus officiis molestiae aut odit.</p>
+    <h2>video</h2>
+    <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/SdBPkSciGlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="n1"></iframe></div>
+
+    <h2>mapa do google</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31834.259208236705!2d-40.940068750000016!3d-4.164788049999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x794ecc46e44e5ab%3A0xf35105e9d4c81b9!2sCarnaubal%2C%20CE%2C%2062375-000!5e0!3m2!1spt-BR!2sbr!4v1690031248211!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <h2>mapa da waze</h2>
+    <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-4.162547&lon=-40.941476&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+
+    <h2>google documents </h2>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQFBOxXiVsrN_2zPlVBbnfD0d_KxBpnxpeQXQ0XP2JNywGQ4e1HpEO7L1i91lkSvCsPGjv0gkYNwKch/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</body>
+</html>
