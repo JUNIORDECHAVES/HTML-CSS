@@ -1,0 +1,78 @@
+
+o atributo "method" do atributo form
+especifica qual método deve ser usado
+nesse caso vamos usar GET e POST
+
+get:
+- os DADOS são passados através da URL,
+geralmente por meio de parâmetros 
+exemplo.(?key=value&...).
+
+post:
+- os DADOS são passados junto ao corpo da mensagem http
+geralmente usando alguma tag html como forma de upload.
+
+
+o atributo "action" do atributo form
+indica o destino da submissão dos dados
+quando o botão submit é pressionado
+esse valor será enviado via POST HTTP
+
+
+O atributo "autocomplete" do elemento form define se o navegador deve preencher o local com algum dado salvo na maquina que voçê estar usando
+
+
+o atributo "required" do elemento input
+define a prioridade para preencher o local
+onde ele está na página
+
+
+o atributo "minlength" do elemento input
+limita o número mínimo de caracteres que pode ser digitado no campo
+
+
+o atributo "maxlength" do elemento input
+limita o número máximo de caracteres que podem ser digitados no campo
+
+
+o atributo "size" do elemento input
+determina quantos caracteres aparecerão visíveis em um campo comum
+(para campos tipo text)
+
+
+o atributo "placeholder" do atributo input
+serve como uma dica ao usuário sobre qual informação deve ser inserida nesse campo
+exemplos 
+email: "<EMAIL>"
+
+
+o atributo "type" do atributo input
+especifica o tipo de entrada esperada pelo usuário
+
+
+o atributo "name" do atributo input
+é usado para identificar os dados enviados via POST ou GET
+quando o botão submit é pressionado
+
+
+o atributo "id" do atributo input
+atribuído às tags label e input, permite associá-las entre si
+permitindo assim clicar nos rótulos para focar no respectivo formul
+
+
+o atributo "autocomplete" do atributo input
+habilita o recurso autocompletar dos navegadores 
+usamos autocomplte para 
+nome completo / endereço
+telefone / cpf
+data de aniversário
+
+    EXEMPLOS DE USO
+    <label for="nome">Nome Completo:</label><br />
+    <input type="text" id="nome" name="nome_completo" autocomplete="
+    off"><br />
+    !-- desativando a função de completamento automático
+
+
+        
+     
