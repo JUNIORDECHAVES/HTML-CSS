@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>exemplo de formulário</h1>
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="iest">estado:</label>
+            <select name="estado" id="iset">
+                <option value="">---escolha---</option selected>
+                <optgroup label="Região suldeste">
+                    <option value="SP">São paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                </optgroup>
+                
+
+                <optgroup label="Região nordestes">
+                    <option value="CE" >Ceára</option>
+                    <option value="PI">Píaui</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        
+        <p>
+            <label for="iprof">profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lista">
+            <datalist id="lista">
+                <option value="ADM">Adiministrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="EMP">Empresario</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">mensagem: <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </label>
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="deletar">
+        </p>
+    </form>
+</body>
+</html>
