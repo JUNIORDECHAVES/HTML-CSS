@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>exemplo de formulário</h1>
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>SEXO</legend>
+            <input type="radio" name="sexo" id="masc" > <label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="fem"> <label for="fem">Feminino</label>
+        </fieldset>
+
+<fieldset>
+    <legend>animes favoritos</legend>
+    <input type="checkbox" name="pok" id="ipoke"><label for="ipoke">pokemon</label> <br>
+    <input type="checkbox" name="op" id="iop"><label for="iop">one piece</label> <br>
+    <input type="checkbox" name="db" id="idb"><label for="idb">dragon ball z</label> <br>
+    <input type="checkbox" name="tesnsura" id="itensura"><label for="itensura">tensei shitara slime</label> <br>
+</fieldset>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+
+</body>
+</html>
