@@ -1,0 +1,55 @@
+@charset "UTF-8" ;
+
+/* versão mobile first */
+
+*{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1em;
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+}
+
+html,{
+    height: 100vh; 
+}
+
+body{
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+main{
+    background: rgba(255, 255, 255, 0.7);
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+main h1{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.836);
+    font-size: 2em;
+}
+img{
+    display: block;
+    margin: auto;
+}
+#phone{
+    display: block;
+}
+#tablet{
+    display: none;
+}
+#print{
+    display: none;
+}
+#pc{
+    display: none;
+}
+#tv{
+    display: none;
+}
