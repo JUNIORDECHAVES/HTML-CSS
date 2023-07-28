@@ -2,6 +2,133 @@
 
 /* todas as demais mídias */
 
+
+/* 
+            pesquisar!!
+           -------------
+    Typical Tevice Breakpoints 
+   ----------------------------
+
+    Piquenas Telas: até 600px
+    Celular: de 600px até 768px
+    Tablet: de 768px até 992px
+    Desktop: de 992 até 1200px
+    Grandes Telas: acima de 1200px 
+*/
+
 @media print {
+    /* impressoras */
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg);
+        /* background é desnecesário pq não aprece na impressão*/
+        }
+        main{
+            border: 2px solid black;
+        }
+        main h1{
+            text-shadow: none;
+        color: black;
+        }
+        #phone{
+            display: none;
+        }
+        #tablet{
+            display: none;
+        }
+        #print{
+            display: block;
+        }
+        #pc{
+            display: none;
+        }
+        #tv{
+            display: none;
+        }    
+        
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* Tablet */
+    body{
+        background: url(../imagens/back-tablet.jpg) no-repeat fixed;
     
+    }
+    main img {
+        display: block;
+        margin: auto;
+    }
+    #phone{
+        display: none;
+    }
+    #tablet{
+        display: block;
+    }
+    #print{
+        display: none;
+    }
+    #pc{
+        display: none;
+    }
+    #tv{
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    /* Desktop */
+    body{
+        background: url(../imagens/back-pc.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    main img {
+        display: block;
+        margin: auto;
+    }
+    #phone{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #print{
+        display: none;
+    }
+    #pc{
+        display: block;
+    }
+    #tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Grandes Telas (TV) */
+    body{
+        background: url(../imagens/back-tv.jpg) no-repeat fixed;
+        background-size: cover;
+    }
+    main img{
+        display: block;
+        margin: auto;
+    }
+    #phone{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #print{
+        display: none;
+    }
+    #pc{
+        display: none;
+    }
+    #tv{
+        display: block;
+    }
 }
