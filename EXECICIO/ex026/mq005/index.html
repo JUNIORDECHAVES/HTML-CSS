@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>meu site</h1>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickmenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">opção 1</a></li>
+                <li><a href="#">opção 2</a></li>
+                <li><a href="#">opção 3</a></li>
+                <li><a href="#">opção 4</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>testando Medias Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nam inventore laborum vitae debitis deleniti dicta alias, officia saepe quos, esse sunt consectetur dolore ea odit nihil labore qui sed.
+            Quo eaque id maiores in natus hic perferendis quia perspiciatis! Expedita rem perferendis quaerat corporis doloribus dolore architecto itaque possimus illum, nemo repellendus, ducimus temporibus iusto impedit at inventore quae!
+            Voluptate hic sed iure aspernatur quae at, adipisci explicabo obcaecati, eaque suscipit accusantium nisi ullam rem assumenda repudiandae ipsum officia eum, optio id similique? Atque perferendis soluta iure dolorum fuga?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium placeat et debitis. Nostrum, voluptates. Quam reprehenderit, non obcaecati necessitatibus quibusdam, soluta minima dolores consectetur incidunt voluptatem eaque? Soluta, possimus itaque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequuntur numquam quia debitis deleniti quas officiis perferendis cumque, veritatis beatae reprehenderit harum rem sed earum vitae alias autem, distinctio unde.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if ( itens.style.display == 'block') {
+                itens.style.display = "none"
+                else {
+                    items.style.display ="block"
+                }
+            }
+           
+        }
+    </script>
+</body>
+</html>
